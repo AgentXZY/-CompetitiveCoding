@@ -12,15 +12,12 @@ void solve() {
         return;
     }
 
-    // 1. Print all odd numbers except 5
     for (int i = 1; i <= n; i += 2) {
         if (i != 5) cout << i << " ";
     }
 
-    // 2. The Bridge: 5 (odd) and 4 (even) sum to 9 (composite)
     cout << 5 << " " << 4 << " ";
 
-    // 3. Print all even numbers except 4
     for (int i = 2; i <= n; i += 2) {
         if (i != 4) cout << i << " ";
     }
@@ -34,4 +31,5 @@ int main() {
     cin >> t;
     while (t--) solve();
     return 0;
+
 }
